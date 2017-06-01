@@ -12,7 +12,7 @@ module.exports = {
     target: 'node',
     output: {
         path: path.join(__dirname, 'src/dist'),
-        filename: 'server.js'
+        filename: 'build.js'
     },
     plugins: [
         new ngtools.AotPlugin({

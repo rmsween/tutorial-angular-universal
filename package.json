@@ -16,7 +16,7 @@
     "build:upgrade": "tsc",
     "serve:upgrade": "http-server",
     "build:aot": "webpack --config webpack.config.aot.js",
-    "serve:aot": "lite-server -c bs-config.aot.json",
+    "serve:aot": "lite-server -c=bs-config.aot.js",
     "build:babel": "babel src -d src --extensions \".es6\" --source-maps",
     "copy-dist-files": "node ./copy-dist-files.js",
     "i18n": "ng-xi18n",
