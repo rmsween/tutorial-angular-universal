@@ -1,7 +1,8 @@
 import 'zone.js/dist/zone-node';
 import { enableProdMode } from '@angular/core';
 import { AppServerModuleNgFactory } from '../../aot/src/uni/app.server.ngfactory';
-import * as express from 'express';
+// import * as express from 'express';
+const express = require('express');
 import { ngUniversalEngine } from './universal-engine';
 enableProdMode();
 const server = express();
