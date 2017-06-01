@@ -1,5 +1,6 @@
 const ngtools = require('@ngtools/webpack');
 const webpack = require('webpack');
+const path = require('path');
 module.exports = {
     devtool: 'source-map',
     entry: {
@@ -11,7 +12,7 @@ module.exports = {
     target: 'node',
     output: {
         path: path.join(__dirname, 'src/dist'),
-        filename: 'server.js
+        filename: 'server.js'
     },
     plugins: [
         new ngtools.AotPlugin({
